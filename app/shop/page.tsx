@@ -68,7 +68,7 @@ export default function ShopPage() {
             <div className="flex items-center gap-3 bg-[#1a1a1a] border border-[#2a2a2a] px-4 py-3 mb-6">
               <span className="text-lg">📏</span>
               <p className="text-gray-400 text-sm">
-                Each cube is <strong className="text-white">1 inch (25mm)</strong> — about the size of a quarter.
+                Each cube is <strong className="text-white">1 inch (25mm)</strong> in size.
               </p>
             </div>
 
