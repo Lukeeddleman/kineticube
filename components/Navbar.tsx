@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -10,10 +11,7 @@ export default function Navbar() {
       <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between h-16 2xl:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 5 L62 38 L95 38 L70 58 L80 92 L50 72 L20 92 L30 58 L5 38 L38 38 Z" fill="#f05a1a" />
-            <path d="M35 35 L65 65 M65 35 L35 65" stroke="#0d0d0d" strokeWidth="8" strokeLinecap="round"/>
-          </svg>
+          <Image src="/logo.png" alt="Kineticube logo" width={36} height={36} className="object-contain" />
           <span
             className="font-[family-name:var(--font-display)] font-black text-xl tracking-wider text-white group-hover:text-[#f05a1a] transition-colors"
           >
