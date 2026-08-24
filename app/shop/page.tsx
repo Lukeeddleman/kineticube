@@ -13,6 +13,7 @@ const PRICE = 12.99; // Update when finalized
 
 const perks = [
   "6 cubes per pack",
+  "1 inch targets — built for precision",
   "10 vivid powder colors — randomly assorted",
   "Color-matched corners so you always know what's inside",
   "Instant visual feedback on every shot",

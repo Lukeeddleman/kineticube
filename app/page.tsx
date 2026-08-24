@@ -15,7 +15,7 @@ const features = [
       </svg>
     ),
     title: "Instant Visual Feedback",
-    desc: "See exactly where every round hits — no walking downrange to check holes.",
+    desc: "1-inch targets that show exactly where every round hits — no walking downrange to check holes.",
   },
   {
     icon: (
@@ -340,7 +340,7 @@ export default function Home() {
             READY TO <span className="text-[#f05a1a]">SHOOT?</span>
           </h2>
           <p className="text-gray-400 mb-10 text-lg 2xl:text-xl leading-relaxed">
-            6-pack. 10 colors. Sticks anywhere. Explodes on impact.
+            6-pack. 10 colors. 1 inch. Sticks anywhere. Explodes on impact.
           </p>
           <Link
             href="/shop"
