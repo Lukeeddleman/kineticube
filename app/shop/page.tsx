@@ -54,7 +54,7 @@ export default function ShopPage() {
               KINETICUBE™
             </h2>
             <p className="text-gray-400 font-[family-name:var(--font-display)] tracking-widest text-sm mb-4">
-              REACTIVE POWDER TARGETS — 6-PACK
+              REACTIVE POWDER TARGETS — 6-PACK — <span className="text-yellow-400">1 INCH</span>
             </p>
 
             <div className="flex items-baseline gap-3 mb-6">
@@ -62,6 +62,21 @@ export default function ShopPage() {
                 ${PRICE.toFixed(2)}
               </span>
               <span className="text-gray-500 text-sm">per 6-pack</span>
+            </div>
+
+            {/* ⚠️ Size callout — hard to miss */}
+            <div className="flex items-start gap-4 bg-[#1a1a1a] border border-yellow-500/40 p-4 mb-6">
+              <span className="text-2xl mt-0.5">📏</span>
+              <div>
+                <p className="font-[family-name:var(--font-display)] font-800 tracking-widest text-yellow-400 text-sm mb-1">
+                  HEADS UP — THESE ARE SMALL
+                </p>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Each Kineticube is <strong className="text-white">1 inch (25mm)</strong> — roughly the size of a quarter.
+                  They&apos;re designed for <strong className="text-white">precision shooting at close range</strong>, not general plinking.
+                  Make sure that works for your setup before you order.
+                </p>
+              </div>
             </div>
 
             {/* Perks list */}
