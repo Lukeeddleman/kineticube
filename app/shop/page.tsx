@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import ProductGallery from "@/components/ProductGallery";
 
 export const metadata: Metadata = {
   title: "Shop — Kineticube™ Reactive Powder Targets",
@@ -39,28 +39,8 @@ export default function ShopPage() {
         {/* ── PRODUCT CARD ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Images */}
-          <div className="space-y-4">
-            <div className="bg-[#111111] border border-[#2a2a2a] p-8 flex items-center justify-center min-h-[480px] relative overflow-hidden">
-              <div className="absolute inset-0 bg-[#f05a1a] opacity-5 blur-3xl" />
-              <Image
-                src="/product-front.png"
-                alt="Kineticube 6-Pack — Front"
-                width={380}
-                height={440}
-                className="relative object-contain drop-shadow-2xl"
-                priority
-              />
-            </div>
-            <div className="bg-[#111111] border border-[#2a2a2a] p-8 flex items-center justify-center min-h-[280px] relative overflow-hidden">
-              <div className="absolute inset-0 bg-[#f05a1a] opacity-5 blur-3xl" />
-              <Image
-                src="/product-back.jpg"
-                alt="Kineticube 6-Pack — Back"
-                width={380}
-                height={260}
-                className="relative object-contain"
-              />
-            </div>
+          <div>
+            <ProductGallery />
           </div>
 
           {/* Product details */}
