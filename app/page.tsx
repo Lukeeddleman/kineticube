@@ -114,11 +114,11 @@ export default function Home() {
             <div className="relative float">
               <div className="absolute inset-0 bg-[#f05a1a] opacity-20 blur-3xl rounded-full scale-75" />
               <Image
-                src="/product-front.png"
-                alt="Kineticube 6-Pack"
+                src="/product-hero.webp"
+                alt="Kineticube reactive powder targets exploding with color"
                 width={480}
-                height={560}
-                className="relative drop-shadow-2xl"
+                height={480}
+                className="relative drop-shadow-2xl rounded-lg"
                 priority
               />
             </div>
