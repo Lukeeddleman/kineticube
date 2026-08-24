@@ -122,18 +122,18 @@ export default function Home() {
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#f05a1a] opacity-10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#f05a1a] opacity-5 rounded-full blur-[100px] pointer-events-none" />
 
-        <div className="relative max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20">
+        <div className="relative max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 2xl:gap-20 items-center py-20 2xl:py-32">
           {/* Copy */}
           <div>
             <div className="inline-block bg-[#f05a1a]/10 border border-[#f05a1a]/30 text-[#f05a1a] text-xs font-[family-name:var(--font-display)] tracking-widest px-3 py-1 mb-6">
               REACTIVE POWDER TARGETS
             </div>
-            <h1 className="font-[family-name:var(--font-display)] font-black text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-6">
+            <h1 className="font-[family-name:var(--font-display)] font-black text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl leading-none tracking-tight mb-6 2xl:mb-8">
               STICK IT.<br />
               SHOOT IT.<br />
               <span className="text-[#f05a1a]">SEE IT.</span>
             </h1>
-            <p className="text-gray-400 text-lg mb-8 max-w-md leading-relaxed">
+            <p className="text-gray-400 text-lg 2xl:text-xl mb-8 max-w-md 2xl:max-w-xl leading-relaxed">
               Kineticube reactive powder targets explode in a burst of color on impact —
               giving you instant visual feedback on every single shot.
             </p>
@@ -173,7 +173,7 @@ export default function Home() {
                 alt="Kineticube reactive powder targets exploding with color"
                 width={480}
                 height={480}
-                className="relative drop-shadow-2xl rounded-lg"
+                className="relative drop-shadow-2xl rounded-lg w-full max-w-[480px] 2xl:max-w-[640px]"
                 priority
               />
             </div>
@@ -182,18 +182,18 @@ export default function Home() {
       </section>
 
       {/* ─── FEATURES ─── */}
-      <section className="py-20 bg-[#0d0d0d]">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-display)] font-black text-4xl md:text-5xl tracking-tight">
+      <section className="py-20 2xl:py-28 bg-[#0d0d0d]">
+        <div className="max-w-[1440px] mx-auto px-6">
+          <div className="text-center mb-12 2xl:mb-16">
+            <h2 className="font-[family-name:var(--font-display)] font-black text-4xl md:text-5xl 2xl:text-6xl tracking-tight">
               WHY <span className="text-[#f05a1a]">KINETICUBE?</span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 2xl:gap-8">
             {features.map((f) => (
               <div
                 key={f.title}
-                className="bg-[#1a1a1a] border border-[#2a2a2a] hover:border-[#f05a1a]/40 p-6 transition-all group"
+                className="bg-[#1a1a1a] border border-[#2a2a2a] hover:border-[#f05a1a]/40 p-6 2xl:p-8 transition-all group"
               >
                 <div className="mb-4 group-hover:scale-110 transition-transform origin-left">{f.icon}</div>
                 <h3 className="font-[family-name:var(--font-display)] font-700 text-lg tracking-wide mb-2">
@@ -207,10 +207,10 @@ export default function Home() {
       </section>
 
       {/* ─── HOW IT WORKS ─── */}
-      <section id="how-it-works" className="py-20 bg-[#111111]">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="font-[family-name:var(--font-display)] font-black text-4xl md:text-5xl tracking-tight">
+      <section id="how-it-works" className="py-20 2xl:py-28 bg-[#111111]">
+        <div className="max-w-[1440px] mx-auto px-6">
+          <div className="text-center mb-12 2xl:mb-16">
+            <h2 className="font-[family-name:var(--font-display)] font-black text-4xl md:text-5xl 2xl:text-6xl tracking-tight">
               HOW TO <span className="text-[#f05a1a]">USE</span>
             </h2>
           </div>
@@ -235,8 +235,8 @@ export default function Home() {
       </section>
 
       {/* ─── WORKS ON ─── */}
-      <section className="py-12 bg-[#0d0d0d] border-t border-[#1a1a1a]">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="py-12 2xl:py-16 bg-[#0d0d0d] border-t border-[#1a1a1a]">
+        <div className="max-w-[1440px] mx-auto px-6">
           <p className="text-center text-gray-500 font-[family-name:var(--font-display)] tracking-widest text-sm mb-6">
             WORKS ON
           </p>
@@ -257,7 +257,7 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-b from-[#1a0a00] to-[#0d0d0d] relative overflow-hidden">
         <div className="absolute inset-0 bg-[#f05a1a] opacity-5 blur-[80px]" />
         <div className="relative max-w-2xl mx-auto px-4 text-center">
-          <h2 className="font-[family-name:var(--font-display)] font-black text-5xl md:text-6xl tracking-tight mb-4">
+          <h2 className="font-[family-name:var(--font-display)] font-black text-5xl md:text-6xl 2xl:text-7xl tracking-tight mb-4">
             READY TO <span className="text-[#f05a1a]">SHOOT?</span>
           </h2>
           <p className="text-gray-400 mb-8 text-lg">

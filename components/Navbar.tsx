@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[#0d0d0d]/95 backdrop-blur border-b border-[#1a1a1a]">
-      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between h-16 2xl:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
