@@ -49,9 +49,64 @@ const features = [
 ];
 
 const steps = [
-  { num: "1", label: "PEEL", desc: "Peel the target from its backing." },
-  { num: "2", label: "STICK", desc: "Stick firmly to any clean, dry surface." },
-  { num: "3", label: "SHOOT", desc: "Aim for center for maximum reaction." },
+  {
+    num: "1",
+    label: "PEEL",
+    desc: "Peel the target from its backing.",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        {/* Sticker body */}
+        <rect x="6" y="14" width="26" height="22" rx="2" stroke="#f05a1a" strokeWidth="2"/>
+        {/* Peeled corner flap */}
+        <path d="M32 14 L43 5 L43 25 Z" stroke="#f05a1a" strokeWidth="2" strokeLinejoin="round" fill="#f05a1a" fillOpacity="0.15"/>
+        {/* Fold crease dashes */}
+        <line x1="32" y1="14" x2="43" y2="25" stroke="#f05a1a" strokeWidth="1.5" strokeDasharray="3 2" strokeLinecap="round"/>
+        {/* Finger curl hint */}
+        <path d="M38 8 Q44 6 43 5" stroke="#f05a1a" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+      </svg>
+    ),
+  },
+  {
+    num: "2",
+    label: "STICK",
+    desc: "Stick firmly to any clean, dry surface.",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        {/* Surface */}
+        <rect x="4" y="38" width="40" height="4" rx="1" stroke="#f05a1a" strokeWidth="2"/>
+        {/* Target square */}
+        <rect x="16" y="8" width="16" height="16" rx="2" stroke="#f05a1a" strokeWidth="2"/>
+        {/* Arrow down */}
+        <line x1="24" y1="24" x2="24" y2="34" stroke="#f05a1a" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M19 30 L24 36 L29 30" stroke="#f05a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        {/* Pressure lines */}
+        <line x1="6" y1="28" x2="13" y2="28" stroke="#f05a1a" strokeWidth="1.5" strokeLinecap="round"/>
+        <line x1="35" y1="28" x2="42" y2="28" stroke="#f05a1a" strokeWidth="1.5" strokeLinecap="round"/>
+        <line x1="4" y1="32" x2="11" y2="32" stroke="#f05a1a" strokeWidth="1.5" strokeLinecap="round"/>
+        <line x1="37" y1="32" x2="44" y2="32" stroke="#f05a1a" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+    ),
+  },
+  {
+    num: "3",
+    label: "SHOOT",
+    desc: "Aim for center for maximum reaction.",
+    icon: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        {/* Outer ring */}
+        <circle cx="24" cy="24" r="18" stroke="#f05a1a" strokeWidth="2"/>
+        {/* Middle ring */}
+        <circle cx="24" cy="24" r="11" stroke="#f05a1a" strokeWidth="2"/>
+        {/* Bullseye */}
+        <circle cx="24" cy="24" r="4" fill="#f05a1a"/>
+        {/* Crosshairs */}
+        <line x1="24" y1="2" x2="24" y2="10" stroke="#f05a1a" strokeWidth="2" strokeLinecap="round"/>
+        <line x1="24" y1="38" x2="24" y2="46" stroke="#f05a1a" strokeWidth="2" strokeLinecap="round"/>
+        <line x1="2" y1="24" x2="10" y2="24" stroke="#f05a1a" strokeWidth="2" strokeLinecap="round"/>
+        <line x1="38" y1="24" x2="46" y2="24" stroke="#f05a1a" strokeWidth="2" strokeLinecap="round"/>
+      </svg>
+    ),
+  },
 ];
 
 const surfaces = ["STEEL", "PAPER", "CARDBOARD", "WOOD", "CONCRETE", "+ MORE"];
@@ -163,8 +218,9 @@ export default function Home() {
             {steps.map((s, i) => (
               <div key={s.label} className="text-center relative">
                 {i < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-[#f05a1a]/30" />
+                  <div className="hidden md:block absolute top-[104px] left-[calc(50%+40px)] w-[calc(100%-80px)] h-px bg-[#f05a1a]/30" />
                 )}
+                <div className="flex justify-center mb-4">{s.icon}</div>
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-[#f05a1a] font-[family-name:var(--font-display)] font-black text-3xl text-white mb-4">
                   {s.num}
                 </div>
