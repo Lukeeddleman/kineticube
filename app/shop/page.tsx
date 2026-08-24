@@ -20,7 +20,7 @@ const perks = [
   "3M adhesive — sticks to any surface",
   "Safe & non-explosive",
   "Biodegradable PHA shell",
-  "Made in the USA 🇺🇸",
+  "Made in the USA",
 ];
 
 export default function ShopPage() {
