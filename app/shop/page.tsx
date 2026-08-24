@@ -11,21 +11,10 @@ const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/REPLACE_WITH_YOUR_LINK";
 
 const PRICE = 12.99; // Update when finalized
 
-const colors = [
-  { name: "Blaze Orange", hex: "#FF6B00" },
-  { name: "Neon Yellow", hex: "#E8FF00" },
-  { name: "Hot Pink", hex: "#FF1493" },
-  { name: "Electric Blue", hex: "#0080FF" },
-  { name: "Lime Green", hex: "#39FF14" },
-  { name: "Purple Haze", hex: "#9B30FF" },
-  { name: "Crimson Red", hex: "#DC143C" },
-  { name: "Cyan Flash", hex: "#00FFFF" },
-  { name: "Snow White", hex: "#F5F5F5" },
-  { name: "Smoke Gray", hex: "#808080" },
-];
-
 const perks = [
   "6 cubes per pack",
+  "10 vivid powder colors — randomly assorted",
+  "Color-matched corners so you always know what's inside",
   "Instant visual feedback on every shot",
   "3M adhesive — sticks to any surface",
   "Safe & non-explosive",
@@ -116,27 +105,15 @@ export default function ShopPage() {
               Secure checkout powered by Stripe. Free shipping over $40.
             </p>
 
-            {/* Color variants section */}
+            {/* Color info */}
             <div className="border-t border-[#1a1a1a] pt-6">
-              <h3 className="font-[family-name:var(--font-display)] font-700 tracking-widest text-sm text-gray-400 mb-4">
-                AVAILABLE IN 10 COLORS
+              <h3 className="font-[family-name:var(--font-display)] font-700 tracking-widest text-sm text-gray-400 mb-3">
+                10 COLORS — RANDOMLY ASSORTED
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {colors.map((c) => (
-                  <div key={c.name} className="group relative">
-                    <div
-                      className="w-8 h-8 rounded-full border-2 border-[#2a2a2a] hover:border-white cursor-pointer transition-all hover:scale-110"
-                      style={{ backgroundColor: c.hex }}
-                      title={c.name}
-                    />
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-[#1a1a1a] text-white text-xs px-2 py-1 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                      {c.name}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <p className="text-gray-600 text-xs mt-3">
-                * Color selection available — contact us or note your preference at checkout.
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Every 6-pack contains a surprise mix of our 10 vivid powder colors.
+                Each cube&apos;s corners are color-matched to the powder inside — so you always
+                know what you&apos;re grabbing before you peel.
               </p>
             </div>
           </div>
