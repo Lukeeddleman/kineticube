@@ -105,6 +105,13 @@ export default function ShopPage() {
                 know what you&apos;re grabbing before you peel.
               </p>
             </div>
+
+            {/* Performance disclaimer */}
+            <div className="border-t border-[#1a1a1a] pt-6 mt-6">
+              <p className="text-gray-600 text-xs leading-relaxed">
+                <span className="text-gray-500 font-semibold">Performance Note:</span> Kineticubes perform best with slower or heavier projectiles. High-velocity cartridges such as 5.56 may require more than one impact for full powder release.
+              </p>
+            </div>
           </div>
         </div>
 
