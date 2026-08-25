@@ -82,6 +82,21 @@ export default function ShopPage() {
               ))}
             </ul>
 
+            {/* Performance disclaimer — prominent callout above buy button */}
+            <div className="bg-[#1a1200] border border-yellow-600/40 px-4 py-4 mb-6">
+              <div className="flex items-start gap-3">
+                <span className="text-yellow-400 text-base mt-0.5">⚠️</span>
+                <div>
+                  <p className="text-yellow-400 font-[family-name:var(--font-display)] font-bold tracking-wider text-xs mb-1">
+                    CARTRIDGE COMPATIBILITY
+                  </p>
+                  <p className="text-yellow-200/80 text-sm leading-relaxed">
+                    Kineticubes perform best with slower or heavier projectiles. High-velocity cartridges such as 5.56 NATO may require more than one impact for full powder release.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Buy button */}
             <a
               href={STRIPE_PAYMENT_LINK}
@@ -106,12 +121,7 @@ export default function ShopPage() {
               </p>
             </div>
 
-            {/* Performance disclaimer */}
-            <div className="border-t border-[#1a1a1a] pt-6 mt-6">
-              <p className="text-gray-600 text-xs leading-relaxed">
-                <span className="text-gray-500 font-semibold">Performance Note:</span> Kineticubes perform best with slower or heavier projectiles. High-velocity cartridges such as 5.56 may require more than one impact for full powder release.
-              </p>
-            </div>
+
           </div>
         </div>
 
